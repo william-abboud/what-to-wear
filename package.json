@@ -4,7 +4,8 @@
   "description": "Suggests you clothes to wear based on the weather outside",
   "private": true,
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.prod.config.js",
+    "start": "webpack-dashboard -- webpack serve --config webpack.dev.config.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,9 @@
   "devDependencies": {
     "html-webpack-plugin": "^5.3.1",
     "webpack": "^5.35.1",
-    "webpack-cli": "^4.6.0"
+    "webpack-cli": "^4.6.0",
+    "webpack-dashboard": "^3.3.1",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
   }
 }
