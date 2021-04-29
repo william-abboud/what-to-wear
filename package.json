@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build": "webpack --config webpack.prod.config.js",
-    "start": "webpack-dashboard -- webpack serve --config webpack.dev.config.js"
+    "start": "webpack serve --config webpack.dev.config.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,13 @@
   },
   "homepage": "https://github.com/william-abboud/what-to-wear#readme",
   "devDependencies": {
+    "browserslist": "^4.16.5",
+    "css-loader": "^5.2.4",
     "html-webpack-plugin": "^5.3.1",
+    "postcss": "^8.2.13",
+    "postcss-loader": "^5.2.0",
+    "postcss-preset-env": "^6.7.0",
+    "style-loader": "^2.0.0",
     "webpack": "^5.35.1",
     "webpack-cli": "^4.6.0",
     "webpack-dashboard": "^3.3.1",
