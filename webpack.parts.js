@@ -1,10 +1,14 @@
 const postcssPresetEnv = require('postcss-preset-env');
+const autoprefixer = require('autoprefixer');
 
 const postcssDevConfig = {
   loader: 'postcss-loader',
   options: {
     postcssOptions: {
       plugins: () => [
+        autoprefixer({
+          grid: 'autoplace'
+        }),
         postcssPresetEnv(),
       ],
     }
