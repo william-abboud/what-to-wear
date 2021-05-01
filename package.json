@@ -4,8 +4,8 @@
   "description": "Suggests you clothes to wear based on the weather outside",
   "private": true,
   "scripts": {
-    "build": "webpack --config webpack.prod.config.js",
-    "start": "webpack serve --config webpack.dev.config.js"
+    "build": "cross-env NODE_ENV=production webpack --config webpack.prod.config.js",
+    "start": "cross-env NODE_ENV=development webpack serve --config webpack.dev.config.js"
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,17 @@
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "browserslist": "^4.16.5",
+    "cross-env": "^7.0.3",
     "css-loader": "^5.2.4",
+    "cssnano": "^5.0.2",
+    "cssnano-preset-default": "^5.0.1",
     "html-webpack-plugin": "^5.3.1",
     "postcss": "^8.2.13",
+    "postcss-css-variables": "^0.17.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-import": "^14.0.1",
     "postcss-loader": "^5.2.0",
+    "postcss-nested": "^5.0.5",
     "postcss-preset-env": "^6.7.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.35.1",
@@ -32,5 +39,8 @@
     "webpack-dashboard": "^3.3.1",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
