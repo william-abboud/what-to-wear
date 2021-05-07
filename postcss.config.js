@@ -3,7 +3,6 @@ const postcssNested = require('postcss-nested');
 const postcssVariables = require('postcss-css-variables');
 const postcssFlexboxFixes = require('postcss-flexbugs-fixes');
 const postcssImport = require('postcss-import');
-const cssnano = require('cssnano');
 
 const env = process.env.NODE_ENV;
 
@@ -34,14 +33,15 @@ const devPlugins = [
 
 const prodPlugins = [
   ...sharedPlugins,
-  cssnano({
-    preset: 'default'
-  }),
 ];
 
 const configs = {
-  development: { plugins: devPlugins },
-  production: { plugins: prodPlugins },
+  development: {
+    plugins: devPlugins
+  },
+  production: {
+    plugins: prodPlugins
+  },
 };
 
 module.exports = configs[env];
