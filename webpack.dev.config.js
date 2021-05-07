@@ -1,18 +1,13 @@
+const { merge } = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { merge } = require('webpack-merge')
-
-const { IN_SRC } = require('./webpack.paths');
+const {
+  IN_SRC
+} = require('./webpack.paths');
 const commonConfig = require('./webpack.config');
-const { devStyleConfig } = require('./webpack.parts');
 
 const devConfig = {
   mode: 'development',
   stats: 'error-only',
-  module: {
-    rules: [
-      devStyleConfig,
-    ]
-  },
   devServer: {
     contentBase: './dist',
     open: true,
