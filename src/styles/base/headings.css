@@ -1,0 +1,53 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--secondary-font);
+  line-height: 1.4;
+}
+
+h1,
+.h1 {
+  font-size: 9.7rem;
+}
+
+h2,
+.h2 {
+  font-size: 6.1rem;
+}
+
+h3,
+.h3 {
+  font-size: 4.8rem;
+}
+
+h4,
+.h4 {
+  font-size: 3.4rem;
+}
+
+h5,
+.h5 {
+  font-size: 2.4rem;
+}
+
+h6,
+.h6 {
+  font-size: 2rem;
+}
+
+.subtitle-1 {
+  font-size: 1.6rem;
+}
+
+.subtitle-2 {
+  font-size: 1.4rem;
+}
