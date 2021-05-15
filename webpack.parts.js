@@ -61,8 +61,11 @@ const fontsConfig = {
 };
 
 const jsConfig = {
-  test: /\.(jsx|js|ts|tsx)$/i,
-  use: 'babel-loader',
+  test: /\.tsx?$/i,
+  use: [
+    'babel-loader',
+    'ts-loader',
+  ],
   include: IN_SRC(),
   exclude: /node_modules/,
 };
