@@ -6,13 +6,15 @@ const {
   styleConfig,
   imagesConfig,
   fontsConfig,
-  jsConfig
+  jsConfig,
 } = require('./webpack.parts');
 
 module.exports = {
-  entry: IN_SRC('index.js'),
+  entry: IN_SRC('index.ts'),
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js', '.jsx'],
+  },
   output: {
-    filename: 'main.js',
     path: IN_DIST(),
     clean: true,
   },
