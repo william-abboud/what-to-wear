@@ -31,7 +31,13 @@ const prodConfig = {
           ],
         },
       })
-    ]
+    ],
+    splitChunks: {
+      chunks: 'all',
+      minSize: {
+        javascript: 20000,
+      }
+    }
   },
   plugins: [
     new ExtractCssChunks({
