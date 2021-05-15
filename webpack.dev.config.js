@@ -8,6 +8,7 @@ const commonConfig = require('./webpack.config');
 const devConfig = {
   mode: 'development',
   stats: 'error-only',
+  devtool: 'cheap-module-eval-source-map',
   devServer: {
     contentBase: './dist',
     open: true,
