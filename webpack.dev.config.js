@@ -12,6 +12,7 @@ const devConfig = {
   devServer: {
     contentBase: './dist',
     open: true,
+    hot: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
