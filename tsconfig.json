@@ -6,13 +6,13 @@
     "declaration": true,
     "sourceMap": true,
     "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictBindCallApply": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
     "jsx": "react",
     "allowJs": true,
     "moduleResolution": "node",
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules"],
 }
