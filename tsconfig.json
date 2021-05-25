@@ -9,6 +9,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
+    "experimentalDecorators": true,
     "jsx": "react",
     "allowJs": true,
     "moduleResolution": "node",
